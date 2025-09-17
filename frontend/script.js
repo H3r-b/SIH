@@ -65,6 +65,19 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // Initialize the map and set its view to a chosen location (e.g., Mumbai)
+    var map = L.map('map').setView([19.0760, 72.8777], 12);
+
+    // Add OpenStreetMap tiles
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Add a marker (pointer) to the map
+    L.marker([19.0760, 72.8777]).addTo(map)
+        .bindPopup('Outbreak Location')
+        .openPopup();
+
     // Initial data fetch
     fetchHotspotData();
 });

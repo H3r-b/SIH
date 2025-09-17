@@ -5,10 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Community Health Dashboard</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
 </head>
 <body>
     <div class="dashboard-container">
         <h1>Water-Borne Disease Monitoring Dashboard</h1>
+        <!-- Map Section -->
+        <div class="section map">
+            <h2>Outbreak Location</h2>
+            <div id="map"></div>
+        </div>
         <div class="dashboard-sections">
             <div class="section hotspot">
                 <h2>Hotspot Analysis</h2>
@@ -32,6 +39,8 @@
             </div>
         </div>
     </div>
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
