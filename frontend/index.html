@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Community Health Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <h1>Water-Borne Disease Monitoring Dashboard</h1>
+        <div class="dashboard-sections">
+            <div class="section hotspot">
+                <h2>Hotspot Analysis</h2>
+                <div id="hotspot-content">Loading hotspot data...</div>
+            </div>
+            <div class="section intervention">
+                <h2>Flag Intervention</h2>
+                <button id="flag-intervention-btn">Flag New Intervention</button>
+                <div id="intervention-status"></div>
+            </div>
+            <div class="section resources">
+                <h2>Allocate Resources</h2>
+                <select id="resource-type">
+                    <option value="medical">Medical Supplies</option>
+                    <option value="water">Clean Water</option>
+                    <option value="personnel">Personnel</option>
+                </select>
+                <input type="number" id="resource-quantity" placeholder="Quantity" min="1">
+                <button id="allocate-resource-btn">Allocate</button>
+                <div id="resource-status"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
