@@ -7,10 +7,42 @@
     <link rel="stylesheet" href="style.css">
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <div class="dashboard-container">
         <h1>Water-Borne Disease Monitoring Dashboard</h1>
+        <!-- Statistics Section -->
+        <div class="section statistics">
+            <h2>Statistics</h2>
+            <div class="stats-grid">
+                <div>
+                    <h3>Cases Over Months</h3>
+                    <canvas id="casesChart" width="400" height="200"></canvas>
+                </div>
+                <div>
+                    <h3>Disease Type Distribution</h3>
+                    <canvas id="typePieChart" width="400" height="200"></canvas>
+                </div>
+                <div>
+                    <h3>Age Group Distribution</h3>
+                    <canvas id="ageBarChart" width="400" height="200"></canvas>
+                </div>
+                <div>
+                    <h3>Recovery vs Fatality</h3>
+                    <canvas id="recoveryDoughnutChart" width="400" height="200"></canvas>
+                </div>
+                <div>
+                    <h3>Cases by District</h3>
+                    <canvas id="districtBarChart" width="400" height="200"></canvas>
+                </div>
+                <div>
+                    <h3>Daily New Cases</h3>
+                    <canvas id="dailyLineChart" width="400" height="200"></canvas>
+                </div>
+            </div>
+        </div>
         <!-- Map Section -->
         <div class="section map">
             <h2>Outbreak Location</h2>
